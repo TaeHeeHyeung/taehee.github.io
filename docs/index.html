@@ -1,28 +1,84 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
+<head>
+  <title>기술 블로그</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="/css/reset.css" type="text/css">
+  <style>
+
+  body{
+    margin: 0;
+  }
+  h1 {
+    border-bottom: 1px solid gray;
+    text-align : center;
+    margin: 0;
+    padding: 20px;
+  }
+  #grid {
+    border: 5px ;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+  }
+  #grid ol {
+    border-right: 2px solid gray;
+    width: 100px;
+    margin:0;
+    padding: 32px;
+  }
+  #grid article{
+
+  }
+  /* screen width < 800px */
+  @media (max-width :800px) {
+    #grid {
+      display: block;
+    }
+    #grid ol {
+      border-right: none;
+      width: 100px;
+      margin:0;
+      padding: 32px;
+    }
+    h1{
+      border-bottom: none;
+    }
+  }
+
+
+  a{
+    color: block;
+    text-decoration: none;
+  }
+
+  </style>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
 
-<p>깃허브 블로그 만들어보기</p>
-<a href="https://pages.github.com/">참고 사이트 </a>
-<p>1. User or organization site</p>
-<p>2.깃 클라이언트를 사용중이지 않기 때문에 I don't know 선택</p>
-<p>3.데스크탑용 깃허브를 설치</p>
-<p>4.레파지토리 만들기 username.github.io로 만든다 username은 원하는대로 지정
-https://username.github.io 이것이 블로그 주소가 될 것이다.</p>
-<p>5.깃 클라이언트와 계정 연결, 레파지토리를 불러오기
-레파지토리 설정에 들어가 GitHub Pages의 Source를 Master branch 를 선택하거나 master/docs를 선택한다
-나는 블로그 내용은 docs에만 올리고 싶기 때문에 master/docs를 선택하였다.</p>
-<p>6.  Your site is published at https:// ....라고 나타난다. 완성!</p>
-<p>6.index.html 파일 올리기, 커밋 </p>
-<p>7. 깃클라이언트에서 phshing 클릭</p>
-<p>8. https://username.github.io./ 접속
-</p>
+  <h1>기술 블로그</h1>
+  <div id="grid">
+    <ol>
+      <li><a href="#">목록1</a></li>
+      <li><a href="#">목록2</a></li>
+      <li><a href="#">목록3</a></li>
+    </ol>
 
-<p>404 에러
-  There isn't a GitHub Pages site here.
-바로 페이지 생성이 되지 않을 수 있기 때문에 기다려보자</p>
+    <div class= "article">
+      <p>I'm hosted with GitHub Pages.</p>
+      <p>깃허브 블로그 만들어보기</p>
+      <a href="https://pages.github.com/">참고 사이트 </a>
+      <p>1. User or organization site</p>
+      <p>2.깃 클라이언트를 사용중이지 않기 때문에 I don't know 선택</p>
+      <p>3.데스크탑용 깃허브를 설치</p>
+      <p>4.레파지토리 만들기 username.github.io로 만든다 username은 원하는대로 지정  https://username.github.io 이것이 블로그 주소가 될 것이다.</p>
+      <p>5.깃 클라이언트와 계정 연결, 레파지토리를 불러오기 레파지토리 설정에 들어가 GitHub Pages의 Source를 Master branch 를 선택하거나 master/docs를 선택한다 나는 블로그 내용은 docs에만 올리고 싶기 때문에 master/docs를 선택하였다.</p>
+      <p>6.  Your site is published at https:// ....라고 나타난다. 완성!</p>
+      <p>6.index.html 파일 올리기, 커밋 </p>
+      <p>7. 깃클라이언트에서 phshing 클릭</p>
+      <p>8. https://username.github.io./ 접속</p>
+      <p>페이지 접속시 에러 404 There isn't a GitHub Pages site here. 이는 좀 기다려보면 만들어질 것 이다.</p>
+    </div>
+  </div>
 
 
 </body>
