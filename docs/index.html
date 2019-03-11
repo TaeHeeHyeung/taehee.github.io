@@ -4,17 +4,26 @@
   <title>기술 블로그</title>
   <meta charset="utf-8">
   <link rel="stylesheet" href="/css/reset.css" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Do+Hyeon&amp;subset=korean" rel="stylesheet">
   <style>
 
-  body{
-    margin: 0;
+  h1{
+    color: white;
+    font-size: 50px;
+    font-family: 'Do Hyeon', sans-serif;
   }
-  h1 {
+  .head{
+    background-color: #4d6c8b;
     border-bottom: 1px solid gray;
     text-align : center;
     margin: 0;
     padding: 20px;
+    height: 150px;
   }
+  body{
+    margin: 0;
+  }
+
   #grid {
     border: 5px ;
     display: grid;
@@ -40,9 +49,7 @@
       margin:0;
       padding: 32px;
     }
-    h1{
-      border-bottom: none;
-    }
+
   }
 
 
@@ -50,12 +57,15 @@
     color: block;
     text-decoration: none;
   }
-
+  img{
+    display: block;
+  }
   </style>
 </head>
 <body>
-
-  <h1>기술 블로그</h1>
+  <div class="head">
+  <h1>태희 기술 블로그</h1>
+  </div>
   <div id="grid">
     <ol>
       <li><a href="#">목록1</a></li>
@@ -64,10 +74,11 @@
     </ol>
 
     <div class= "article">
-      <p>I'm hosted with GitHub Pages.</p>
-      <p>깃허브 블로그 만들어보기</p>
-      <a href="https://pages.github.com/">참고 사이트 </a>
-      <p>1. User or organization site</p>
+      <h2>깃허브 블로그 만들어보기</h2>
+      <p>깃 허브 블로그가 없다 가정한 상태에서 진행하도록 하겠습니다.</p>
+      <a href="https://pages.github.com/" target="_blank">https://pages.github.com/ 참고 사이트 </a><br>
+
+      <img src="img/1.png" width="300" height="150"  >1. User or organization site 선택
       <p>2.깃 클라이언트를 사용중이지 않기 때문에 I don't know 선택</p>
       <p>3.데스크탑용 깃허브를 설치</p>
       <p>4.레파지토리 만들기 username.github.io로 만든다 username은 원하는대로 지정  https://username.github.io 이것이 블로그 주소가 될 것이다.</p>
