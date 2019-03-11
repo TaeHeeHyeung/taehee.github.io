@@ -1,0 +1,53 @@
+h1{
+  color: white;
+  font-size: 50px;
+  font-family: 'Do Hyeon', sans-serif;
+}
+.head{
+  background-color: #4d6c8b;
+  border-bottom: 1px solid gray;
+  text-align : center;
+  margin: 0;
+  padding: 20px;
+  height: 150px;
+}
+body{
+  margin: 0;
+}
+
+#grid {
+  border: 5px ;
+  display: grid;
+  grid-template-columns: 200px 1fr;
+}
+#grid ol {
+  border-right: 2px solid gray;
+  width: 100px;
+  margin:0;
+  padding: 32px;
+}
+#grid article{
+
+}
+/* screen width < 800px */
+@media (max-width :800px) {
+  #grid {
+    display: block;
+  }
+  #grid ol {
+    border-right: none;
+    width: 100px;
+    margin:0;
+    padding: 32px;
+  }
+
+}
+
+
+a{
+  color: block;
+  text-decoration: none;
+}
+img{
+  display: block;
+}
