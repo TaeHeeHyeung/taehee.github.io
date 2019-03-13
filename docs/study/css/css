@@ -1,0 +1,26 @@
+/*
+전체 선택자
+* {
+margin: 0;
+padding: 0;
+}
+* 내부 선택자
+#container * {
+border: 1px solid black;
+}
+# id 선택자
+#container {
+width: 960px;
+margin: auto;
+}
+.X 클래스 선택자
+.error {
+color: red;
+}
+X Y 하위 선택자
+li a {
+text-decoration: none;
+}
+*/
+/* 구글 폰트 */
+/* https://fonts.google.com/ */
