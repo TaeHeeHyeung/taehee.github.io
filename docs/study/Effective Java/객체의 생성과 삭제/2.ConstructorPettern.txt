@@ -1,0 +1,2 @@
+자바빈 패턴(JavaBeans Pattern)
+출처: https://ifcontinue.tistory.com/7
