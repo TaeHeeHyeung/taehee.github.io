@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>페이징 구현 하기</h1>
+    <p>목표: 페이지를 분할하여 출력</p>
+
+      <p>ROWNUM의 동작 원리 <br>
+      ROWNUM은 실제 컬럼이아닌 가상컬럼이다. <br>
+      ROWNUM은 테이블 값에 순차적으로 1,2,3... N 이 할당된다.</p>
+
+
+      <div class="colorscripter-code" style="color:#010101; font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important; position:relative !important; overflow:auto"><table class="colorscripter-code-table" style="margin:0; padding:0; border:none; background-color:#fafafa; border-radius:4px;" cellspacing="0" cellpadding="0"><tr><td style="padding:6px; border-right:2px solid #e5e5e5"><div style="margin:0; padding:0; word-break:normal; text-align:right; color:#666; font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important; line-height:130%"><div style="line-height:130%">1</div><div style="line-height:130%">2</div><div style="line-height:130%">3</div></div></td><td style="padding:6px 0"><div style="margin:0; padding:0; color:#010101; font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important; line-height:130%"><div style="padding:0 6px; white-space:pre; line-height:130%"><span style="color:#ff3399">select</span>&nbsp;<span style="color:#010101"></span><span style="color:#0099cc">*</span>&nbsp;</div><div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;&nbsp;<span style="color:#ff3399">from</span>&nbsp;t&nbsp;</div><div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;<span style="color:#ff3399">where</span>&nbsp;ROWNUM&nbsp;<span style="color:#010101"></span><span style="color:#0099cc">&gt;</span>&nbsp;<span style="color:#004fc8">1</span>;</div></div></td><td style="vertical-align:bottom; padding:0 2px 4px 0"><a href="http://colorscripter.com/info#e" target="_blank" style="text-decoration:none; color:white"><span style="font-size:9px; word-break:normal; background-color:#e5e5e5; color:white; border-radius:10px; padding:1px">cs</span></a></td></tr></table></div>
+
+      <p>위 코드의 경우 ROWNUM &gt 에서 첫 ronum 이 1일 때 false 이기 때문에 다음 값을 불러올 수 없다. <br>
+      그렇기에 ROWNUM에 간접적으로 별칭을 추가한 후 서브쿼리를 사용하여 값을 찾아올 수 있다.</p>
+      <br>
+
+<p>월급 5~10등 사이 출력</p>
+<div class="colorscripter-code" style="color:#010101; font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important; position:relative !important; overflow:auto"><table class="colorscripter-code-table" style="margin:0; padding:0; border:none; background-color:#fafafa; border-radius:4px;" cellspacing="0" cellpadding="0"><tr><td style="padding:6px; border-right:2px solid #e5e5e5"><div style="margin:0; padding:0; word-break:normal; text-align:right; color:#666; font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important; line-height:130%"><div style="line-height:130%">1</div><div style="line-height:130%">2</div><div style="line-height:130%">3</div><div style="line-height:130%">4</div><div style="line-height:130%">5</div><div style="line-height:130%">6</div><div style="line-height:130%">7</div></div></td><td style="padding:6px 0"><div style="margin:0; padding:0; color:#010101; font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important; line-height:130%"><div style="padding:0 6px; white-space:pre; line-height:130%"><span style="color:#ff3399">select</span>&nbsp;<span style="color:#010101"></span><span style="color:#0099cc">*</span></div><div style="padding:0 6px; white-space:pre; line-height:130%"><span style="color:#ff3399">from</span>(<span style="color:#ff3399">select</span>&nbsp;rownum&nbsp;ronum,&nbsp;list.<span style="color:#010101"></span><span style="color:#0099cc">*</span></div><div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#ff3399">from</span>&nbsp;(<span style="color:#ff3399">select</span>&nbsp;employee_id,first_name,salary</div><div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#ff3399">from</span>&nbsp;employees</div><div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#ff3399">order</span>&nbsp;<span style="color:#ff3399">by</span>&nbsp;salary&nbsp;desc)&nbsp;list</div><div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#ff3399">where</span>&nbsp;rownum&nbsp;<span style="color:#010101"></span><span style="color:#0099cc">&lt;</span><span style="color:#010101"></span><span style="color:#0099cc">=</span><span style="color:#004fc8">10</span>)</div><div style="padding:0 6px; white-space:pre; line-height:130%"><span style="color:#ff3399">where</span>&nbsp;ronum<span style="color:#010101"></span><span style="color:#0099cc">&gt;</span><span style="color:#010101"></span><span style="color:#0099cc">=</span><span style="color:#004fc8">5</span>;</div></div><div style="text-align:right; margin-top:-13px; margin-right:5px; font-size:9px; font-style:italic"><a href="http://colorscripter.com/info#e" target="_blank" style="color:#e5e5e5; text-decoration:none">Colored by Color Scripter</a></div></td><td style="vertical-align:bottom; padding:0 2px 4px 0"><a href="http://colorscripter.com/info#e" target="_blank" style="text-decoration:none; color:white"><span style="font-size:9px; word-break:normal; background-color:#e5e5e5; color:white; border-radius:10px; padding:1px">cs</span></a></td></tr></table></div>
+
+ <p>서브 쿼리와 별칭을 활용하는점에 있어 주의해야한다.</p>
+<br><br>
+     출처: https://m.blog.naver.com/PostView.nhn?blogId=heartflow89&logNo=221005192056&proxyReferer=https%3A%2F%2Fwww.google.com%2F
+     </p>
+  </body>
+</html>
