@@ -1,11 +1,5 @@
-<<<<<<< HEAD
-body{
-  margin: 0;
-}
-.head h1{
-=======
+
 h1{
->>>>>>> 1640f053d27148025bb11b74f87049ce6aacaea1
   color: white;
   font-size: 50px;
   font-family: 'Do Hyeon', sans-serif;
@@ -18,63 +12,35 @@ h1{
   padding: 20px;
   height: 150px;
 }
-<<<<<<< HEAD
-.container {
-=======
 body{
   margin: 0;
 }
 
 #grid {
->>>>>>> 1640f053d27148025bb11b74f87049ce6aacaea1
   border: 5px ;
   display: grid;
   grid-template-columns: 300px 1fr;
 }
-<<<<<<< HEAD
-.container #container_ol{
-=======
 #grid ol {
->>>>>>> 1640f053d27148025bb11b74f87049ce6aacaea1
   border-right: 2px solid gray;
   width: 200px;
   margin:0;
   padding: 32px;
 }
-<<<<<<< HEAD
-
-a{
-  color: block;
-  text-decoration: none;
-}
-img{
-  display: block;
-}
-
-=======
 #grid article{
 
 }
->>>>>>> 1640f053d27148025bb11b74f87049ce6aacaea1
 /* screen width < 800px */
 @media (max-width :800px) {
   #grid {
     display: block;
   }
   #grid ol {
-<<<<<<< HEAD
-=======
     border-right: none;
->>>>>>> 1640f053d27148025bb11b74f87049ce6aacaea1
     width: 100px;
     margin:0;
     padding: 32px;
   }
-<<<<<<< HEAD
-  h1{
-    border-bottom: none;
-  }
-=======
 
 }
 
@@ -85,5 +51,4 @@ a{
 }
 img{
   display: block;
->>>>>>> 1640f053d27148025bb11b74f87049ce6aacaea1
 }
