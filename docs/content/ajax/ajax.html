@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <button type="button" value="fetch" onclick="
+      fetch('content/ajax/html').then(function(response){
+        response.text().then(function(text){
+          document.querySelector('article').innerHTML = text;
+        })
+      })">패치 테스트</button>
+
+      <button type="button" onclick="
+      function callbackme(){
+        console.log('response end');
+      }
+        fetch('html').then(callbackme);
+        console.log(1)
+        console.log(2)
+
+      ">패치</button>
+
+      <art>
+
+      </art>
+  </body>
+</html>
