@@ -1,0 +1,32 @@
+깃허브 중복커밋 합치기
+rebase
+
+특정 python 파일을 계속해서 한줄씩 추가해서 5번 commit을 하고 5번째 commit의 코드 내용은 그대로 유지하면서 commit은 4번째 commit으로 남기는 실습을 진행해 보겠습니다.
+
+rebase_test.py를 만든다
+print(“First Commit”)을 추가한다.
+“Fisrt Commit”이라는 메시지로 commit한다.
+2~3을 “Fifth Commit”까지 반복한다.
+
+예제 코드
+위에 나온대로 하면 아래와 같이 나옵니다.
+
+rebase_test.py
+
+print("Fisrt Commit")
+print("Second Commit")
+print("Third Commit")
+print("Fourth Commit")
+print("Fifth Commit")
+
+커밋 내역은 다음처럼 나오면 정상입니다. 추가적으로 나중에 remote에 push하는 과정까지 진행해볼 예정이기에 remote에 추가하였습니다.
+first commit
+setcond commit
+third commit
+fourth commit
+fifth commit
+
+이제 현재 코드를 그대로 “Fifth Commit”의 커밋 메시지를 삭제해보겠습니다. 자 터미널이나 쉘에서 다음과 같은 명령어를 칩니다.
+pick fifth commit, pick Fourth commit
+
+squash -> 현재 커밋은 유지하고 이전 커밋으로 녹아듬(커밋은 유지하고 메시지는 삭제)

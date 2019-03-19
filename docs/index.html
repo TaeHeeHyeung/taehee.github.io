@@ -1,10 +1,14 @@
-<!-- https://taeheehyeung.github.io/taehee.github.io/ -->
+
 <!DOCTYPE html>
 <html lang="ko">
 <head>
+<<<<<<< HEAD
   <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 
   <title>백문이 불여일코</title>
+=======
+  <title>기술블로그</title>
+>>>>>>> 519824853f8e766552048d6340fa6328c25b51dd
   <meta charset="utf-8">
   <link rel="stylesheet" href="/css/reset.css" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Do+Hyeon&amp;subset=korean" rel="stylesheet">
@@ -15,7 +19,9 @@
 
 </head>
 <body>
+  https://taeheehyeung.github.io/taehee.github.io/
   <div class="head">
+<<<<<<< HEAD
   <h1>백문이 불여일코<br>태희기술 블로그</h1>
 
   </div>
@@ -26,24 +32,38 @@
       <li><a onclick="document.querySelector('article').innerHTML= '<h2>HTML</h2>HTML is...';">목록1</a></li>
       <li><a document.querySelector('article').innerHTML= '<h2>HTML</h2>Css is...';>목록2</a></li>
       <li><a document.querySelector('article').innerHTML= '<h2>HTML</h2>HTML is...';>목록3</a></li>
+=======
+  <h1 class ="index_h1">백문이 불여일코</h1>
+  </div>
+  <div id="grid">
+    <ol>
+      <li><a value="fetch" onclick="fetch('content/github/makeblog/makeBlog.html').then(function(response){
+        response.text().then(function(text){
+          document.querySelector('article').innerHTML= text;
+        })
+      })">깃허브 블로그 만들기</a></li>
+      <li><a value="fetch" onclick="fetch('content/database/paging.html').then(function(response){
+        response.text().then(function(text){
+          document.querySelector('article').innerHTML= text;
+        })
+      })">데이터베이스</a></li>
+      <li><a value="fetch" onclick="fetch('content/JavaScript/htmlInHtml.html').then(function(response){
+        response.text().then(function(text){
+          document.querySelector('article').innerHTML= text;
+        })
+      })">자바스크립트</a></li>
+      <li><a value="fetch" onclick="fetch('content/ajax/ajax.html').then(function(response){
+        response.text().then(function(text){
+          document.querySelector('article').innerHTML= text;
+        })
+      })">ajax</a></li>
+>>>>>>> 519824853f8e766552048d6340fa6328c25b51dd
     </ol>
 
     <!-- <div class= "article"> -->
     <article>
-      <h2>깃허브 블로그 만들어보기</h2>
-      <p>깃 허브 블로그가 없다 가정한 상태에서 진행하도록 하겠습니다.</p>
-      <a href="https://pages.github.com/" target="_blank">https://pages.github.com/ 참고 사이트 </a><br>
+    페이지 제작중입니다.
 
-      <img src="img/1.png" width="300" height="150"  >1. User or organization site 선택
-      <p>2.깃 클라이언트를 사용중이지 않기 때문에 I don't know 선택</p>
-      <p>3.데스크탑용 깃허브를 설치</p>
-      <p>4.레파지토리 만들기 username.github.io로 만든다 username은 원하는대로 지정  https://username.github.io 이것이 블로그 주소가 될 것이다.</p>
-      <p>5.깃 클라이언트와 계정 연결, 레파지토리를 불러오기 레파지토리 설정에 들어가 GitHub Pages의 Source를 Master branch 를 선택하거나 master/docs를 선택한다 나는 블로그 내용은 docs에만 올리고 싶기 때문에 master/docs를 선택하였다.</p>
-      <p>6.  Your site is published at https:// ....라고 나타난다. 완성!</p>
-      <p>6.index.html 파일 올리기, 커밋 </p>
-      <p>7. 깃클라이언트에서 phshing 클릭</p>
-      <p>8. https://username.github.io./ 접속</p>
-      <p>페이지 접속시 에러 404 There isn't a GitHub Pages site here. 이는 좀 기다려보면 만들어질 것 이다.</p>
     </article>
 
     <input type="button"  value="fetch" onclick="fetch('html').then(function(response){

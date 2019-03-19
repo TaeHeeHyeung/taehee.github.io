@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <button type="button" value="fetch" onclick="
+      fetch('content/ajax/html').then(function(response){
+        response.text().then(function(text){
+          document.querySelector('art').innerHTML = text;
+        })
+      })">패치 테스트</button>
+
+      <button type="button" onclick="
+      function callbackme(){
+        console.log('response end');
+      }
+        fetch('content/ajax/html').then(callbackme);
+        console.log(1)
+        console.log(2)
+
+      ">패치</button>
+
+      <p>fetch('html').then(function(response){ <br>
+        if(response.status =='404'){<br>
+          alert('Not found')<br>
+        }<br>
+      });<br>
+       이 코드를 태그안의 onClick으로 실행하여 f12를 눌러 개발자 화면에서 response가 404 인지 200인지 확인한다. 404이면 객체르 찾지 못한경우 이고 200이면 값을 찾은 경우이다.
+    </p>
+      <art>
+
+      </art>
+  </body>
+</html>
