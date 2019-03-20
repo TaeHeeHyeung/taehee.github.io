@@ -1,0 +1,56 @@
+<div class="entry">
+							<div class="titleWrap">
+								<h2><a href="/97">Git 관련 학습 자료 모음</a></h2>
+								<div class="category"><a href="/category/%EA%B0%80%EC%9D%B4%EB%93%9C%20%EB%B0%8F%20%EA%B5%90%EC%9C%A1%20%EB%AC%B8%EC%84%9C/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4%20%EA%B8%B0%EB%B3%B8%20%EA%B8%B0%EC%88%A0">가이드 및 교육 문서/소프트웨어 기본 기술</a></div>
+							</div><!-- close titleWrap -->
+		<!-- 포스트 본문 내용 -->
+							<div class="article">
+								<div class="tt_article_useless_p_margin"><p>Git, GitHub 초보자를 학습 사이트 및 자료 모음. (제보해주시면 추가합니다.)</p><p><br></p><ul style="list-style-type: disc;"><li><a href="http://opentutorials.org/course/1492" target="_blank" class="tx-link">Git - 생활코딩</a><br>: Git 독학을 위한 강의/학습 사이트.<br><br></li><li><a href="http://www.slideshare.net/flyskykr/github-46014813" target="_blank" class="tx-link">GitHub 실습 교육</a><br>: GitHub 과 SourceTree 를 이용한 실습 교육.<br><br></li><li><a href="http://backlogtool.com/git-guide/kr/" target="_blank" class="tx-link">누구나 쉽게 이해할 수 있는 Git 입문</a><br>: 버전 관리를 완벽하게 이해해 보자.<br><br></li><li><a href="http://www.slideshare.net/soymilkvegemil/140109-43340824" target="_blank" class="tx-link">팀 프로젝트 협업 툴</a><br>: 버전관리 및 협업 툴 용어 및 개념, Trello / GitHub / SourceTree 사용법 소개. SlideShare 문서<br><br></li><li><a href="http://learnbranch.urigit.com/" target="_blank" class="tx-link">Git 브랜치 배우기</a><br>: 실습과 그림으로 Git branch에 대해 배워 보세요. 웹 사이트.<br><br></li><li><a href="http://www.slideshare.net/einsub/svn-git-17386752" target="_blank" class="tx-link">svn 능력자를 위한 git 개념 가이드</a><br>: SVN 경험자를 위한 GIT 안내서. SlideShare 문서<br><br></li><li><a href="http://rogerdudler.github.io/git-guide/index.ko.html" target="_blank" class="tx-link">Git 간편 안내서</a><br>: 초보자를 위한 간편(요약) 가이드. 웹 사이트.<br><br></li></ul><p><br></p><div class="container_postbtn"><div class="postbtn_like"><div class="wrap_btn"><button type="button" class="btn_post like_btn uoc-icon" data-uoc-svc="tistory" data-uoc-uid="280396_97" data-uoc-sc="" data-uoc-pcurl="https://sunnykwak.tistory.com/97" data-uoc-fetchurl="http://api.kakao.tistory.com/like/fetch?uid=280396_97">
+                                                <div class="uoc-icon">
+                                                    <span class="ico_postbtn ico_like">좋아요</span>
+                                                    <span class="txt_like uoc-text">공감</span>
+                                                    <span class="txt_like uoc-count" style="display: none;"></span>
+                                                </div>
+                                              </button></div><div class="wrap_btn wrap_btn_share"><button type="button" class="btn_post sns_btn btn_share" data-thumbnail-url="https://t1.daumcdn.net/tistory_admin/static/images/openGraph/opengraph.png" data-title="Git 관련 학습 자료 모음" data-description="Git, GitHub 초보자를 학습 사이트 및 자료 모음. (제보해주시면 추가합니다.) Git - 생활코딩 : Git 독학을 위한 강의/학습 사이트. GitHub 실습 교육 : GitHub 과 SourceTree 를 이용한 실습 교육. 누구나 쉽게.." data-profile-image="https://t1.daumcdn.net/cfile/tistory/14508E394F20E2710D" data-profile-name="곽중선" data-pc-url="https://sunnykwak.tistory.com/97" data-blog-title="一生牛步行">
+                                            <span class="ico_postbtn ico_share">공유하기</span>
+                                          </button></div><div class="wrap_btn wrap_btn_etc" data-entry-id="97" data-entry-visibility="public"><button type="button" class="btn_post btn_etc2"><span class="ico_postbtn ico_etc">글 요소</span></button></div></div><button type="button" class="btn_menu_toolbar btn_subscription " data-blog-id="280396" data-url="https://sunnykwak.tistory.com/97">
+                                            <em class="txt_state">구독하기</em>
+                                            <strong class="txt_tool_id">一生牛步行</strong>
+                                            <span class="img_common_tistory ico_check_type1"></span>
+                                          </button><div class="postbtn_ccl" data-ccl-type="3"><a href="http://creativecommons.org/licenses/by/4.0/deed.ko" target="_blank" class="link_ccl"><span class="bundle_ccl"><span class="ico_postbtn ico_ccl1">저작자표시</span></span></a></div></div>    <!--
+	<rdf:RDF xmlns="http://web.resource.org/cc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+		<Work rdf:about="">
+			<license rdf:resource="http://creativecommons.org/licenses/by-fr/2.0/kr/" />
+		</Work>
+		<License rdf:about="http://creativecommons.org/licenses/by-fr/">
+			<permits rdf:resource="http://web.resource.org/cc/Reproduction"/>
+			<permits rdf:resource="http://web.resource.org/cc/Distribution"/>
+			<requires rdf:resource="http://web.resource.org/cc/Notice"/>
+			<requires rdf:resource="http://web.resource.org/cc/Attribution"/>
+			<permits rdf:resource="http://web.resource.org/cc/DerivativeWorks"/>
+		</License>
+	</rdf:RDF>
+	--></div>
+							</div><!-- close article -->
+							<div class="clear"></div>
+							<div class="author">
+								<span class="text">Posted by</span>
+								善 곽중선
+							</div>
+		<!-- 태그트레일 -->
+
+							<div class="actionTrail">
+								<div class="wrapper">
+									<a href="#tb" onclick="toggleLayerForEntry(97, 'trackback'); return false" title="trackback" class="tb"><span id="trackbackCount97">trackback <span class="cnt">0</span></span></a>
+									<a href="#rp" onclick="toggleLayerForEntry('97', 'comment'); return false" title="comment" class="rp"><span id="commentCount97">comment <span class="cnt">0</span></span></a>
+								</div>
+							</div>
+		<!-- 트랙백 -->
+							<div id="entry97Trackback" style="display:none">
+								<div class="trackback">
+									<h3><span class="hide">트랙백 주소 - </span></h3>
+
+								</div><!-- close trackback -->
+							</div>
+							<div id="entry97Comment" style="display:none"></div>
+						</div>
