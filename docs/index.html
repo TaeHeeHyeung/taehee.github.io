@@ -1,68 +1,44 @@
-
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="ko" dir="ltr">
 <head>
-  <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-
-  <title>백문이 불여일코</title>
   <meta charset="utf-8">
-  <link rel="stylesheet" href="/css/reset.css" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Do+Hyeon&amp;subset=korean" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <style type="text/css">
-      @import url("css/main.css");
-  </style>
-
+  <title></title>
 </head>
 <body>
-  https://taeheehyeung.github.io/taehee.github.io/
-  <div class="head">
-  <h1 class ="index_h1">백문이 불여일코</h1>
-
-  </div>
-  <div id="grid">
-    <ol>
-      <li><a value="fetch" onclick="fetch('content/github/makeblog/makeBlog.html').then(function(response){
+  <script>
+    function fetchPage(name){
+      fetch('html').then(function(response){
         response.text().then(function(text){
-          document.querySelector('article').innerHTML= text;
+          document.querySelector('article').innerHTML = text;
         })
-      })">깃허브 블로그 만들기</a></li>
-      <li><a value="fetch" onclick="fetch('content/github/gitstudylist').then(function(response){
-        response.text().then(function(text){
-          document.querySelector('article').innerHTML= text;
-        })
-      })">깃허브 공부 사이트</a></li>
-      <li><a value="fetch" onclick="fetch('content/database/paging.html').then(function(response){
-        response.text().then(function(text){
-          document.querySelector('article').innerHTML= text;
-        })
-      })">데이터베이스</a></li>
-      <li><a value="fetch" onclick="fetch('content/JavaScript/htmlInHtml.html').then(function(response){
-        response.text().then(function(text){
-          document.querySelector('article').innerHTML= text;
-        })
-      })">자바스크립트</a></li>
-      <li><a value="fetch" onclick="fetch('content/ajax/ajax.html').then(function(response){
-        response.text().then(function(text){
-          document.querySelector('article').innerHTML= text;
-        })
-      })">ajax</a></li>
-    </ol>
-
-    <!-- <div class= "article"> -->
-    <article>
-    페이지 제작중입니다.
-
-    </article>
-
-    <input type="button"  value="fetch" onclick="fetch('html').then(function(response){
-      response.text().then(function(text){alert(text);
       })
-    })
-    ">
-    <!-- </div> -->
+    }
+  </script>
+  <li><a  onclick="fetchPage('html')">HTML</a></li>
 
-  </div>
+    <li><a  onclick="fetchPage('css')">CSS</a></li>
 
+
+    <li><a onclick="fetchPage('javascript')">javascript</a></li>
+    <!-- function callbackme(){
+    console.log('response end');
+  }
+  fetch('css').then(callbackme);
+  console.log(1)
+  console.log(2) -->
+
+<article class="">
+
+</article>
+  <p>fetch('html').then(function(response){ <br>
+    if(response.status =='404'){<br>
+      alert('Not found')<br>
+    }<br>
+  });<br>
+  이 코드를 태그안의 onClick으로 실행하여 f12를 눌러 개발자 화면에서 response가 404 인지 200인지 확인한다. 404이면 객체르 찾지 못한경우 이고 200이면 값을 찾은 경우이다.
+</p>
+<art>
+
+</art>
 </body>
 </html>
