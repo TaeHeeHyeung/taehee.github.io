@@ -7,16 +7,19 @@
 <body>
   <script>
     function fetchPage(name){
-      fetch('html').then(function(response){
+      fetch(name).then(function(response){
         response.text().then(function(text){
           document.querySelector('article').innerHTML = text;
         })
       })
     }
   </script>
-  <li><a  onclick="fetchPage('html.txt')">HTML</a></li>
-    <li><a  onclick="fetchPage('css.txt')">CSS</a></li>
-    <li><a onclick="fetchPage('javascript.txt')">javascript</a></li>
+  <a href="#three"> 링크 타보기 </a>
+  <p>href #! 해쉬링크에는 관습적으로 !를 달아준다</p>
+
+  <li><a href="#!html.txt"  onclick="fetchPage('html.txt')">HTML</a></li>
+    <li><a href="#!css.txt" onclick="fetchPage('css.txt')">CSS</a></li>
+    <li><a href="#!javascript.txt" onclick="fetchPage('javascript.txt')">javascript</a></li>
     <!-- function callbackme(){
     console.log('response end');
   }
@@ -25,7 +28,7 @@
   console.log(2) -->
 
 <article class="">
-
+  이곳에 데이터가 들어갑니다.
 </article>
   <p>fetch('html').then(function(response){ <br>
     if(response.status =='404'){<br>
@@ -34,8 +37,23 @@
   });<br>
   이 코드를 태그안의 onClick으로 실행하여 f12를 눌러 개발자 화면에서 response가 404 인지 200인지 확인한다. 404이면 객체르 찾지 못한경우 이고 200이면 값을 찾은 경우이다.
 </p>
-<art>
 
-</art>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<p id ="three">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<script>
+  if(location.hash){
+    console.log(location.hash);
+    // fetchPage(location.hash);
+  }else{
+    fetchPage('welcom');
+  }
+
+</script>
+
+
 </body>
 </html>
